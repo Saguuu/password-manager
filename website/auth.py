@@ -67,7 +67,7 @@ def register():
             elif len(name) < 2:
                 flash("Username must be at least 2 characters long", category="error")
             elif len(request.form.get("password")) < 8:
-                flash("Email must be at least 8 characters long", category="error")
+                flash("Password must be at least 8 characters long", category="error")
             elif request.form.get("password") != request.form.get("password2"):
                 flash("Passwords do not match", category="error")
             else:
