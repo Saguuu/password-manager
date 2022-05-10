@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(36, 34, 34);
+}
+
+.card-body {
+    background-color:rgb(58, 55, 55) !important;
+}
+
+.card-title {
+    color:aliceblue !important;
+}
+
+.card-text {
+    color:aliceblue !important;
+}
+
+.hide {
+    display: none;
+}
+  
+.show {
+    display: block;
+}

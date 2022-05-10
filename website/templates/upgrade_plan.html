@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {% block
+content %}
+<div class="container">
+  <form method="post" action="/upgrade_plan">
+    <h3 align="center" style="color: azure">Upgrade plan</h3>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      name="plan"
+    >
+      <option selected>Choose plan</option>
+      <option value=1>
+        Basic: 10 passwords
+      </option>
+      <option value=2>
+        Pro: 25 passwords
+      </option>
+      <option value=3>
+        Ultimate: Unlimited passwords
+      </option>
+    </select>
+    <div class="form-group">
+      <label for="answer">Enter card number</label>
+      <input
+        type="text"
+        class="form-control"
+        id="card"
+        name="card"
+        placeholder="Enter card number"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock %}
