@@ -11,8 +11,8 @@
             <img src='{{ thing[3] }}' class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ thing[0] }}</h5>
-                <p id="{{ thing[0] }}" class="card-text" style="display:none">Password: {{ thing[1] }}</p>
-                <button id="{{ thing[1] }}" type="button" class="btn btn-primary" onclick="showPassword(document.getElementById('{{ thing[0] }}').id, document.getElementById('{{ thing[1] }}').id)">Show</button>
+                <p id="{{ thing[2] }}" class="card-text" style="display:none">Password: {{ thing[1] }}</p>
+                <button id="{{ thing[1] }}" type="button" class="btn btn-primary" onclick="showPassword(document.getElementById('{{ thing[2] }}').id, document.getElementById('{{ thing[1] }}').id)">Show</button>
                 <button type="button" class="close" onclick="deletePassword('{{ thing[2] }}')">
                     <span aria-hidden="true">&times;</span>
                 </button>
